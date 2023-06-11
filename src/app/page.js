@@ -77,7 +77,7 @@ const Home = () => {
                   height={49}
               />
               <h4>Store any type of file</h4>
-              <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+              <p>Whether you are sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
             </article>
           </div>
         </section>
