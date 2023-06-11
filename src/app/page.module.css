@@ -265,6 +265,37 @@
   position: relative;
 }
 
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  min-width: 150vw;
+  min-height: 210vw;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: var(--dark-blue-su);
+}
+
+.hero::before {
+  bottom: 15vh;
+  border-radius: 45%;
+  animation-duration: 10s;
+}
+
+.hero::after {
+  bottom: 12vh;
+  opacity: .5;
+  border-radius: 47%;
+  animation-duration: 10s;
+}
+
+.hero .heroTitle, .hero p, .hero .btn, .hero img {
+  position: relative;
+  z-index: 2;
+}
+
 @media (min-width:680px) {
   .hero {
     max-width: 980px;
@@ -272,37 +303,11 @@
     text-align: center;
     position: relative;
   }
-
-  .hero::before,
-  .hero::after {
-    content: "";
-    position: absolute;
-    left: 50%;
+  .hero::after, .hero::before{
     min-width: 300vw;
     min-height: 300vw;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background-color: var(--dark-blue-su);
   }
   
-  .hero::before {
-    bottom: 15vh;
-    border-radius: 45%;
-    animation-duration: 10s;
-  }
-  
-  .hero::after {
-    bottom: 12vh;
-    opacity: .5;
-    border-radius: 47%;
-    animation-duration: 10s;
-  }
-
-  .hero .heroTitle, .hero p, .hero .btn, .hero img {
-    position: relative;
-    z-index: 2;
-  }
   .hero .heroTitle {
     font-size: 34px;
     margin: 25px 0;
