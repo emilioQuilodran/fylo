@@ -4,8 +4,6 @@ import styles from './page.module.css'
 import utils from '../styles/utils.module.css'
 import Layout, { siteTitle } from '@/components/layout'
 
-const name = 'Fylo';
-
 const Home = () => {
   return (
     <Layout home>
